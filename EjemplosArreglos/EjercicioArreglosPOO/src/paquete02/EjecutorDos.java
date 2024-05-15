@@ -17,7 +17,7 @@ public class EjecutorDos {
         // si no se ejecuta esta linea no podria sacar el promedio de las notas designadas 
         // por lo tanto el resultado seria 0 lo cual marcaria como una nota mas baja que seria 
         // regular 
-        //l.establecerPromedioCualitativo();
+        l.establecerPromedioCualitativo();
         // al no poner esta linea al imprimir en pantalla el resultado no seria ni regular a sobresaliente 
         // por lo cual arrojaria null
         System.out.printf("\n%s\n", l);

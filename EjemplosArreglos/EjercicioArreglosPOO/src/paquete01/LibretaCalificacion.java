@@ -84,8 +84,10 @@ public class LibretaCalificacion {
     @Override
     public String toString() {
         System.out.println("======================================");
-        String cadena = "Libreta de Calificaciones\n";
-        cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena,
+        String cadena = "Libreta de Calificaciones\n============================"
+                + "\n";
+        cadena = String.format("%sNombre: %s\n============================\n"
+                + "Calificaciones:\n", cadena,
                 obtenerEstudiante());
         // cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena,
         //        estudiante);
@@ -98,8 +100,9 @@ public class LibretaCalificacion {
         //         + "Promedio cuantitativo: %s\n",
         //        cadena, obtenerPromedio(), obtenerPromedioCualitativo());
         
-        cadena = String.format("%sPromedio calificaciones: %.2f\n"
-                 + "Promedio cuantitativo: %s\n",
+        cadena = String.format("%sPromedio calificaciones: %.2f"
+                + "\n====================================="
+                 + "\nPromedio cuantitativo: %s\n",
                 cadena, promedio, promedioCualitativo+
                         "\n=======================================");
         
