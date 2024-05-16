@@ -31,7 +31,8 @@ public class LibretaCalificacion {
         double suma = 0;
         
         for (int i = 0; i < obtenerCalificaciones().length; i++) {
-            suma = suma + obtenerCalificaciones()[i].obtenerNota();
+            Calificacion c = obtenerCalificaciones()[1];
+            suma = suma + c.obtenerNota();
             
         }
         
@@ -98,7 +99,8 @@ public class LibretaCalificacion {
         */
         
                
-        String cadena = "Libreta de Calificaciones\n";
+        String cadena = "===================================================\n"
+                + "Libreta de Calificaciones\n";
         cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena, 
                 obtenerEstudiante());
         

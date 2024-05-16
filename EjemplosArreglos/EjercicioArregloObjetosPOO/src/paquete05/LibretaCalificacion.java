@@ -80,8 +80,11 @@ public class LibretaCalificacion {
     
     @Override
     public String toString(){
-        String cadena = "Libreta de Calificaciones\n";
-        cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena, 
+        String cadena = "===========================================\n"
+                + "Libreta de Calificaciones\n==========================="
+                + "========\n";
+        cadena = String.format("%sNombre: %s\n============================="
+                + "\nCalificaciones:\n", cadena, 
                 obtenerEstudiante());
         for (int i = 0; i < obtenerCalificaciones().length; i++) {
             cadena = String.format("%s\t\t%s - %s [%.2f]\n", cadena, 
